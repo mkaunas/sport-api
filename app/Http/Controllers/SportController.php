@@ -28,7 +28,7 @@ class SportController extends Controller
         return response()->json($query->get());
     }
 
-    public function show(Sport $sport): Sport
+    public function show(Sport $sport): JsonResponse
     {
         return response()->json($sport);
     }
